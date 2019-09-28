@@ -1,0 +1,34 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "baseUrl": ".",
+        "declaration": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "esModuleInterop": true,
+        "module": "esnext",
+        "lib": ["esnext"],
+        "newLine": "LF",
+        "jsx": "react",
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": false,
+        "noUnusedParameters": false,
+        "noUnusedLocals": true,
+        "moduleResolution": "node",
+        "outDir": "dist",
+        "skipLibCheck": true,
+        "sourceMap": true,
+        "strictNullChecks": false,
+        "target": "esnext",
+        "paths": {
+            "react-native-themed-components": [
+                "./src/index"
+            ]
+        }
+    },
+    "include": [
+        "src/**/*.ts"
+    ]
+}

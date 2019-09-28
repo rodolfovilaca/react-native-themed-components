@@ -1,0 +1,56 @@
+{
+  "name": "react-native-themed-components",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "lint": "tslint ./src/**/*.ts ./test/**/*.ts",
+    "prepare": "bob build",
+    "prepublish": "npm run build"
+  },
+  "peerDependencies": {
+    "lodash": "*",
+    "react": "*",
+    "react-native": "*",
+    "react-native-gesture-handler": "*",
+    "react-native-reanimated": "*",
+    "reanimated-bottom-sheet": "*",
+    "styled-components": "*"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@react-native-community/bob": "^0.4.1",
+    "@types/jest": "^24.0.15",
+    "@types/react": "^16.9.3",
+    "@types/react-native": "^0.60.15",
+    "@types/styled-components": "^4.1.19",
+    "babel-loader": "^8.0.6",
+    "istanbul": "^0.4.5",
+    "jest": "^24.8.0",
+    "lodash": "^4.17.15",
+    "prettier": "^1.17.0",
+    "react-native-gesture-handler": "^1.1.0",
+    "react-native-reanimated": "^1.3.0",
+    "reanimated-bottom-sheet": "1.0.0-alpha.14",
+    "styled-components": "^5.0.0-beta.9",
+    "tslint": "^5.17.0",
+    "typedoc": "^0.14.2",
+    "typescript": "^3.6.3"
+  },
+  "author": "",
+  "license": "ISC",
+  "@react-native-community/bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module",
+      "typescript"
+    ]
+  },
+  "dependencies": {}
+}

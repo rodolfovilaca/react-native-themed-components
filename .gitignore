@@ -1,0 +1,62 @@
+# OSX
+#
+StoryBookThemedComponents/.DS_Store
+
+# Xcode
+#
+StoryBookThemedComponents/build/
+StoryBookThemedComponents/*.pbxuser
+StoryBookThemedComponents/!default.pbxuser
+StoryBookThemedComponents/*.mode1v3
+StoryBookThemedComponents/!default.mode1v3
+StoryBookThemedComponents/*.mode2v3
+StoryBookThemedComponents/!default.mode2v3
+StoryBookThemedComponents/*.perspectivev3
+StoryBookThemedComponents/!default.perspectivev3
+StoryBookThemedComponents/xcuserdata
+StoryBookThemedComponents/*.xccheckout
+StoryBookThemedComponents/*.moved-aside
+StoryBookThemedComponents/DerivedData
+StoryBookThemedComponents/*.hmap
+StoryBookThemedComponents/*.ipa
+StoryBookThemedComponents/*.xcuserstate
+StoryBookThemedComponents/xcshareddata
+
+# Android/IntelliJ
+#
+StoryBookThemedComponents/build/
+StoryBookThemedComponents/.idea
+StoryBookThemedComponents/.gradle
+StoryBookThemedComponents/local.properties
+StoryBookThemedComponents/*.iml
+
+# node.js
+#
+node_modules
+lib
+dist
+StoryBookThemedComponents/npm-debug.log
+yarn-error.log
+
+# BUCK
+StoryBookThemedComponents/buck-out/
+StoryBookThemedComponents/\.buckd/
+StoryBookThemedComponents/*.keystore
+StoryBookThemedComponents/!debug.keystore
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/
+
+StoryBookThemedComponents/*/fastlane/report.xml
+StoryBookThemedComponents/*/fastlane/Preview.html
+StoryBookThemedComponents/*/fastlane/screenshots
+
+# Bundle artifact
+StoryBookThemedComponents/*.jsbundle
+
+# CocoaPods
+StoryBookThemedComponents/ios/Pods/
