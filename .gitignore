@@ -34,7 +34,7 @@ StoryBookThemedComponents/*.iml
 #
 node_modules
 lib
-dist
+# dist
 StoryBookThemedComponents/npm-debug.log
 yarn-error.log
 

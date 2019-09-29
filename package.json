@@ -35,7 +35,7 @@
     "prettier": "^1.17.0",
     "react-native-gesture-handler": "^1.1.0",
     "react-native-reanimated": "^1.3.0",
-    "reanimated-bottom-sheet": "1.0.0-alpha.14",
+    "reanimated-bottom-sheet": "^1.0.0-alpha.14",
     "styled-components": "^5.0.0-beta.9",
     "tslint": "^5.17.0",
     "typedoc": "^0.14.2",
@@ -52,5 +52,9 @@
       "typescript"
     ]
   },
-  "dependencies": {}
+  "dependencies": {
+    "reanimated-bottom-sheet": "^1.0.0-alpha.14",
+    "lodash": "^4.17.15",
+    "styled-components": "^5.0.0-beta.9"
+  }
 }
