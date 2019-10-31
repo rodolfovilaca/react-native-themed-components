@@ -7,5 +7,6 @@ declare const _default: {
     Small: import("styled-components").StyledComponent<typeof import("react-native").Text, import("styled-components").DefaultTheme, {}, never>;
     Medium: import("styled-components").StyledComponent<typeof import("react-native").Text, import("styled-components").DefaultTheme, {}, never>;
     Big: import("styled-components").StyledComponent<typeof import("react-native").Text, import("styled-components").DefaultTheme, {}, never>;
+    Title: import("styled-components").StyledComponent<typeof import("react-native").Text, import("styled-components").DefaultTheme, {}, never>;
 };
 export default _default;

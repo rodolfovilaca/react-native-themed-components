@@ -6,6 +6,7 @@ import Big from './Big';
 import ButtonText from './ButtonText';
 import PrimaryText from './PrimaryText';
 import SecondaryText from './SecondaryText';
+import Title from './Title';
 export default {
     Base,
     ButtonText,
@@ -15,5 +16,6 @@ export default {
     Small,
     Medium,
     Big,
+    Title,
 };
 //# sourceMappingURL=index.js.map
