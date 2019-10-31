@@ -1,5 +1,5 @@
-import * as React from "react";
-import PortalContext from "./PortalContext";
+import * as React from 'react';
+import PortalContext from './PortalContext';
 function PortalGate(props) {
     const value = React.useContext(PortalContext);
     React.useEffect(() => {

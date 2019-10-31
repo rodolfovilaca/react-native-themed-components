@@ -1,23 +1,22 @@
-import { DefaultTheme } from "styled-components";
+import {DefaultTheme} from 'styled-components';
 
 export type IProps = {
   theme: DefaultTheme;
 };
 
 export enum FontWeight {
-  normal = "normal",
-  bold = "bold",
-  f100 = "100",
-  f200 = "200",
-  f300 = "300",
-  f400 = "400",
-  f500 = "500",
-  f600 = "600",
-  f700 = "700",
-  f800 = "800",
-  f900 = "900"
+  normal = 'normal',
+  bold = 'bold',
+  f100 = '100',
+  f200 = '200',
+  f300 = '300',
+  f400 = '400',
+  f500 = '500',
+  f600 = '600',
+  f700 = '700',
+  f800 = '800',
+  f900 = '900',
 }
-
 
 export type FontType = {
   fontFamily: string;

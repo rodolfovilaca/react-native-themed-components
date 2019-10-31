@@ -1,4 +1,4 @@
-import { FontWeight } from "../../types";
+import { FontWeight } from '../../types';
 declare const _default: {
     dark: boolean;
     borderRadius: number;
@@ -69,6 +69,10 @@ declare const _default: {
             lineHeight: number;
         };
         big: {
+            fontSize: number;
+            lineHeight: number;
+        };
+        title: {
             fontSize: number;
             lineHeight: number;
         };

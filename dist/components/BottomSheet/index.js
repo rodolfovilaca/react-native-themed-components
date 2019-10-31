@@ -1,19 +1,19 @@
 // @ts-ignore
-import React, { forwardRef, useState, useContext } from "react";
-import { StyleSheet, TouchableWithoutFeedback } from "react-native";
-import BottomSheet from "reanimated-bottom-sheet/src";
-import Animated from "react-native-reanimated";
-import AbsoluteView from "../Layout/Absolute";
-import { useLazyRef } from "../../hooks";
-import styled from "styled-components/native";
+import React, { forwardRef, useState, useContext } from 'react';
+import { StyleSheet, TouchableWithoutFeedback } from 'react-native';
+import BottomSheet from 'reanimated-bottom-sheet/src';
+import Animated from 'react-native-reanimated';
+import AbsoluteView from '../Layout/Absolute';
+import { useLazyRef } from '../../hooks';
+import styled from 'styled-components/native';
 import ThemeContext from '../Theme/ThemeContext';
 const Header = styled.View `
-    background-color: ${(props) => props.theme.dark ? props.theme.pallete.primary.dark : props.theme.pallete.primary.light};
-    shadow-color: ${(props) => props.theme.pallete.backdrop};
-    padding-top: 20;
-    border-top-left-radius: 20;
-    align-items: center;
-    border-top-right-radius: 20;
+  background-color: ${(props) => props.theme.dark ? props.theme.pallete.primary.dark : props.theme.pallete.primary.light};
+  shadow-color: ${(props) => props.theme.pallete.backdrop};
+  padding-top: 20;
+  border-top-left-radius: 20;
+  align-items: center;
+  border-top-right-radius: 20;
 `;
 const PanelHandle = styled.View `
   width: 40;
@@ -29,7 +29,7 @@ export default forwardRef((props, ref) => {
     const theme = useContext(ThemeContext);
     const animatedShadowOpacity = Animated.interpolate(opacityValue, {
         inputRange: [0, 1],
-        outputRange: [0.9, 0]
+        outputRange: [0.9, 0],
     });
     const renderHeader = () => (React.createElement(Header, null,
         React.createElement(PanelHandle, null)));
@@ -49,15 +49,15 @@ export default forwardRef((props, ref) => {
                 {
                     ...StyleSheet.absoluteFillObject,
                     zIndex: 99,
-                    backgroundColor: theme.pallete.backdrop
+                    backgroundColor: theme.pallete.backdrop,
                 },
                 {
-                    opacity: animatedShadowOpacity
-                }
+                    opacity: animatedShadowOpacity,
+                },
             ] })),
         touchable && (React.createElement(AnimatedTouchable, { onPress: props.closeBottomsheet },
             React.createElement(AbsoluteView, { style: {
-                    zIndex: 99
+                    zIndex: 99,
                 } }))),
         React.createElement(BottomSheet, Object.assign({ ref: ref, callbackNode: opacityValue, renderHeader: renderHeader, initialSnap: 1, onOpenStart: onOpenStart, onOpenEnd: onOpenEnd, onCloseEnd: onCloseEnd }, props))));
 });

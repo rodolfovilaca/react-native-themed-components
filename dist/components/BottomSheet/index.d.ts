@@ -1,7 +1,7 @@
-import React from "react";
-import BottomSheet from "reanimated-bottom-sheet/src";
-import Animated from "react-native-reanimated";
-import { PanGestureHandler, TapGestureHandler } from "react-native-gesture-handler";
+import React from 'react';
+import BottomSheet from 'reanimated-bottom-sheet/src';
+import Animated from 'react-native-reanimated';
+import { PanGestureHandler, TapGestureHandler } from 'react-native-gesture-handler';
 declare type Props = {
     /**
      * Points for snapping of bottom sheet component. They define distance from bottom of the screen.

@@ -78,6 +78,10 @@ declare const _default: {
                 fontSize: number;
                 lineHeight: number;
             };
+            title: {
+                fontSize: number;
+                lineHeight: number;
+            };
             subtitle1: {
                 fontWeight: import("../../types").FontWeight;
                 fontSize: number;

@@ -1,8 +1,8 @@
-import { Platform, StatusBar, Dimensions, PixelRatio } from "react-native";
-const { width: SCREEN_WIDTH, height: SCREEN_HEIGHT, } = Dimensions.get('window');
+import { Platform, StatusBar, Dimensions, PixelRatio } from 'react-native';
+const { width: SCREEN_WIDTH, height: SCREEN_HEIGHT } = Dimensions.get('window');
 // based on iphone 5s's scale
 const scale = SCREEN_WIDTH / 320;
-const deviceHeight = Platform.OS === "android" ? SCREEN_HEIGHT - StatusBar.currentHeight : SCREEN_HEIGHT;
+const deviceHeight = Platform.OS === 'android' ? SCREEN_HEIGHT - StatusBar.currentHeight : SCREEN_HEIGHT;
 export function percentFont(percent) {
     const heightPercent = (percent * deviceHeight) / 100;
     return Math.round(heightPercent);

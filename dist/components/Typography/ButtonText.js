@@ -1,4 +1,4 @@
-import styled from "styled-components/native";
+import styled from 'styled-components/native';
 import BaseText from './Base';
 // font-family: ${(props: IProps) => props.theme.typography.button.fontFamily};
 // line-height: ${(props: IProps) => props.theme.typography.button.lineHeight};

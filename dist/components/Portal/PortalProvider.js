@@ -1,15 +1,15 @@
-import * as React from "react";
-import PortalContext from "./PortalContext";
+import * as React from 'react';
+import PortalContext from './PortalContext';
 class PortalProvider extends React.Component {
     constructor() {
         super(...arguments);
         this.state = {
-            gates: {}
+            gates: {},
         };
         this.teleport = (gateName, element) => this.setState({ gates: { ...this.state.gates, [gateName]: element } });
         this.unmount = (gateName) => {
             this.setState((prevState) => ({
-                gates: { ...prevState.gates, [gateName]: undefined }
+                gates: { ...prevState.gates, [gateName]: undefined },
             }));
         };
     }
@@ -18,7 +18,7 @@ class PortalProvider extends React.Component {
         return (React.createElement(PortalContext.Provider, { value: {
                 gates: this.state.gates,
                 teleport: this.teleport,
-                unmount: this.unmount
+                unmount: this.unmount,
             } }, children));
     }
 }

@@ -1,15 +1,12 @@
 // @ts-ignore
-import React, { forwardRef, useState, LegacyRef, useContext } from "react";
-import { StyleSheet, TouchableWithoutFeedback } from "react-native";
-import BottomSheet from "reanimated-bottom-sheet/src";
-import Animated from "react-native-reanimated";
-import AbsoluteView from "../Layout/Absolute";
-import { useLazyRef } from "../../hooks";
-import {
-  PanGestureHandler,
-  TapGestureHandler
-} from "react-native-gesture-handler";
-import styled from "styled-components/native";
+import React, {forwardRef, useState, LegacyRef, useContext} from 'react';
+import {StyleSheet, TouchableWithoutFeedback} from 'react-native';
+import BottomSheet from 'reanimated-bottom-sheet/src';
+import Animated from 'react-native-reanimated';
+import AbsoluteView from '../Layout/Absolute';
+import {useLazyRef} from '../../hooks';
+import {PanGestureHandler, TapGestureHandler} from 'react-native-gesture-handler';
+import styled from 'styled-components/native';
 import ThemeContext from '../Theme/ThemeContext';
 
 type Props = {
@@ -99,7 +96,7 @@ type Props = {
   innerGestureHandlerRefs: [
     React.RefObject<PanGestureHandler>,
     React.RefObject<PanGestureHandler>,
-    React.RefObject<TapGestureHandler>
+    React.RefObject<TapGestureHandler>,
   ];
 
   enabledImperativeSnapping?: boolean;
@@ -114,12 +111,13 @@ type Props = {
 };
 
 const Header = styled.View`
-    background-color: ${(props: any) => props.theme.dark ? props.theme.pallete.primary.dark : props.theme.pallete.primary.light};
-    shadow-color: ${(props: any) => props.theme.pallete.backdrop};
-    padding-top: 20;
-    border-top-left-radius: 20;
-    align-items: center;
-    border-top-right-radius: 20;
+  background-color: ${(props: any) =>
+    props.theme.dark ? props.theme.pallete.primary.dark : props.theme.pallete.primary.light};
+  shadow-color: ${(props: any) => props.theme.pallete.backdrop};
+  padding-top: 20;
+  border-top-left-radius: 20;
+  align-items: center;
+  border-top-right-radius: 20;
 `;
 
 const PanelHandle = styled.View`
@@ -134,10 +132,10 @@ export default forwardRef((props: Props, ref: LegacyRef<BottomSheet>) => {
   const [touchable, setTouchable] = useState(false);
   const [view, setView] = useState(false);
   const opacityValue: any = useLazyRef(() => new Animated.Value(1));
-  const theme = useContext(ThemeContext)
+  const theme = useContext(ThemeContext);
   const animatedShadowOpacity = Animated.interpolate(opacityValue, {
     inputRange: [0, 1],
-    outputRange: [0.9, 0]
+    outputRange: [0.9, 0],
   });
 
   const renderHeader = () => (
@@ -159,9 +157,7 @@ export default forwardRef((props: Props, ref: LegacyRef<BottomSheet>) => {
     setView(false);
   };
 
-  const AnimatedTouchable = Animated.createAnimatedComponent(
-    TouchableWithoutFeedback
-  );
+  const AnimatedTouchable = Animated.createAnimatedComponent(TouchableWithoutFeedback);
 
   return (
     <>
@@ -171,11 +167,11 @@ export default forwardRef((props: Props, ref: LegacyRef<BottomSheet>) => {
             {
               ...StyleSheet.absoluteFillObject,
               zIndex: 99,
-              backgroundColor: theme.pallete.backdrop
+              backgroundColor: theme.pallete.backdrop,
             },
             {
-              opacity: animatedShadowOpacity
-            }
+              opacity: animatedShadowOpacity,
+            },
           ]}
         />
       )}
@@ -183,7 +179,7 @@ export default forwardRef((props: Props, ref: LegacyRef<BottomSheet>) => {
         <AnimatedTouchable onPress={props.closeBottomsheet}>
           <AbsoluteView
             style={{
-              zIndex: 99
+              zIndex: 99,
             }}
           />
         </AnimatedTouchable>

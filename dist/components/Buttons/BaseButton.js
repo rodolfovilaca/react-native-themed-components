@@ -1,4 +1,4 @@
-import styled from "styled-components/native";
+import styled from 'styled-components/native';
 // ${(props: any) => props.style}
 const Button = styled.TouchableOpacity `
   align-items: center;

@@ -1,5 +1,5 @@
-import React from "react";
-import { DefaultTheme } from "styled-components";
+import React from 'react';
+import { DefaultTheme } from 'styled-components';
 declare type Props = {
     theme: DefaultTheme;
     children: React.ReactComponentElement<any>;

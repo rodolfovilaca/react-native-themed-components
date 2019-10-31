@@ -1,7 +1,7 @@
-import React from "react";
-import { ThemeProvider, DefaultTheme } from "styled-components";
-import defaultTheme from "./DefaultTheme";
-import merge from "lodash/merge";
+import React from 'react';
+import {ThemeProvider, DefaultTheme} from 'styled-components';
+import defaultTheme from './DefaultTheme';
+import merge from 'lodash/merge';
 
 type Props = {
   theme: DefaultTheme;

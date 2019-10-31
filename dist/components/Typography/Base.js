@@ -1,4 +1,4 @@
-import styled from "styled-components/native";
+import styled from 'styled-components/native';
 export default styled.Text `
   text-align: center;
   font-size: ${(props) => props.theme.typography.base.fontSize};

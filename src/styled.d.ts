@@ -1,7 +1,7 @@
-import "styled-components";
-import { FontWeight, FontType, ColorType } from "./types";
+import 'styled-components';
+import {FontWeight, FontType, ColorType} from './types';
 
-declare module "styled-components" {
+declare module 'styled-components' {
   export interface DefaultTheme {
     dark: boolean;
     borderRadius: number;
@@ -44,6 +44,7 @@ declare module "styled-components" {
       big: FontType;
       h5: FontType;
       h6: FontType;
+      title: FontType;
       subtitle1: FontType;
       subtitle2: FontType;
       body1: FontType;
